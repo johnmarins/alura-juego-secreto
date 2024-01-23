@@ -22,7 +22,7 @@ function verificarIntento() {
   //console.log(typeof(numeroSecreto));
   //console.log(numeroDeUsuario);
   //console.log(numeroDeUsuario === numeroSecreto);
-  console.log(intentos);
+  //console.log(intentos);
   if (numeroDeUsuario === numeroSecreto) {
     asignarTextoElemento("p",`Acertaste el número en ${intentos} ${intentos === 1 ? "vez" : "veces"}`);
     document.getElementById("reiniciar").removeAttribute("disabled");
@@ -41,8 +41,8 @@ function verificarIntento() {
 
 function generarNumeroSecreto() {
   let numeroGenerado = Math.floor(Math.random() * numeroMaximo) + 1;
-  console.log(numeroGenerado);
-  console.log(listaNumerosSorteados);
+  //console.log(numeroGenerado);
+  //console.log(listaNumerosSorteados);
   //Si ya sorteamos todos los números
   if (listaNumerosSorteados.length == numeroMaximo) {
     asignarTextoElemento('p', 'Ya se sortearon todos los números posibles');
